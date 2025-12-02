@@ -15,7 +15,7 @@
 |           | PA10     | TX           | 
 */
 #include <stdio.h>
-#include "air32f10x_conf.h"
+#include "2514F062_conf.h"
 #include "debug.h"
 #include "uip.h"
 #include "uip_arp.h"

@@ -1,7 +1,7 @@
 /*
  * @Note Auto Injection Conversion, channel2(PA2) and injected channel1(PA3)
 */
-#include <air32f10x_adc.h>
+#include <2514F062_adc.h>
 #include "debug.h"
 
 

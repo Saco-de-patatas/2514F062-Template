@@ -1,7 +1,7 @@
 #ifndef __MAIN_H
 #define __MAIN_H
 
-#include "air32f10x.h"
+#include "2514F062.h"
 
 
 uint8_t SPI_TxRxByte(uint8_t data);

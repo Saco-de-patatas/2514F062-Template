@@ -1,15 +1,15 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __AIR32F10x_FLASH_H
-#define __AIR32F10x_FLASH_H
+#ifndef __2514F062_FLASH_H
+#define __2514F062_FLASH_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x.h"
+#include "2514F062.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 
@@ -127,7 +127,7 @@ typedef enum
 #define FLASH_WRProt_Pages120to123     ((uint32_t)0x40000000) /*!< air32 Medium-density devices: Write protection of page 120 to 123 */
 #define FLASH_WRProt_Pages124to127     ((uint32_t)0x80000000) /*!< air32 Medium-density devices: Write protection of page 124 to 127 */
 
-/* Values to be used with air32 High-density and air32F10X Connectivity line devices */
+/* Values to be used with air32 High-density and 2514F062 Connectivity line devices */
 #define FLASH_WRProt_Pages0to1         ((uint32_t)0x00000001) /*!< air32 High-density, XL-density and Connectivity line devices:
                                                                    Write protection of page 0 to 1 */
 #define FLASH_WRProt_Pages2to3         ((uint32_t)0x00000002) /*!< air32 High-density, XL-density and Connectivity line devices:
@@ -319,7 +319,7 @@ typedef enum
   * @{
   */
 
-/*------------ Functions used for all air32F10x devices -----*/
+/*------------ Functions used for all 2514F062 devices -----*/
 void FLASH_SetLatency(uint32_t FLASH_Latency);
 void FLASH_HalfCycleAccessCmd(uint32_t FLASH_HalfCycleAccess);
 void FLASH_PrefetchBufferCmd(uint32_t FLASH_PrefetchBuffer);
@@ -344,7 +344,7 @@ void FLASH_ClearFlag(uint32_t FLASH_FLAG);
 FLASH_Status FLASH_GetStatus(void);
 FLASH_Status FLASH_WaitForLastOperation(uint32_t Timeout);
 
-/*------------ New function used for all air32F10x devices -----*/
+/*------------ New function used for all 2514F062 devices -----*/
 void FLASH_UnlockBank1(void);
 void FLASH_LockBank1(void);
 FLASH_Status FLASH_EraseAllBank1Pages(void);
@@ -362,7 +362,7 @@ FLASH_Status FLASH_BootConfig(uint16_t FLASH_BOOT);
 }
 #endif
 
-#endif /* __AIR32F10x_FLASH_H */
+#endif /* __2514F062_FLASH_H */
 /**
   * @}
   */

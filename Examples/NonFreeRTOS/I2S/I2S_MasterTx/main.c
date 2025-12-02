@@ -12,8 +12,8 @@
  * 
  * Change I2S standard according to your I2S device: LSB for PT8211, Phillips for MAX98357A
 */
-#include "air32f10x_spi.h"
-#include "air32f10x_dma.h"
+#include "2514F062_spi.h"
+#include "2514F062_dma.h"
 #include "debug.h"
 #include "voice.h"
 

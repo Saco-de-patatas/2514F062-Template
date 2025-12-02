@@ -38,7 +38,7 @@
  *         Adam Dunkels <adam@sics.se>
  */
 #include <stdio.h>
-#include "air32f10x.h"
+#include "2514F062.h"
 #include "clock-arch.h"
 
 __IO uint32_t RunTime = 0;

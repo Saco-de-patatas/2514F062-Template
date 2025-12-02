@@ -1,7 +1,7 @@
 /*
  * @Note Regular conversion, ch1(PA1), start by software and read by interrupt handler
 */
-#include <air32f10x_adc.h>
+#include <2514F062_adc.h>
 #include "debug.h"
 
 void RCC_Configuration(void)

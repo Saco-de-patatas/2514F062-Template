@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include "coremark.h"
 
-#include "air32f10x_tim.h"
+#include "2514F062_tim.h"
 
 // ѭ�������Ĵ�����ֻ��Ҫ������ʱ�����10���Ӽ���
 #define ITERATIONS 10000

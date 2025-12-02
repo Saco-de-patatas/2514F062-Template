@@ -10,7 +10,7 @@
  * 3. In interrupt service routine (ISR), collect the result from ADC->DR.
  * 4. In ISR, Repeat step 2 to configure ADC for the next channel.
 */
-#include <air32f10x_adc.h>
+#include <2514F062_adc.h>
 #include "debug.h"
 
 void RCC_Configuration(void)

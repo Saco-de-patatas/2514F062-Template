@@ -2,7 +2,7 @@
  * @Note PWM output, PA8
  *
 */
-#include <air32f10x_tim.h>
+#include <2514F062_tim.h>
 #include "debug.h"
 
 /* PWM Output Mode Definition */

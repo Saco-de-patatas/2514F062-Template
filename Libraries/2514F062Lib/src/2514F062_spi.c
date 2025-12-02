@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_spi.h"
-#include "air32f10x_rcc.h"
+#include "2514F062_spi.h"
+#include "2514F062_rcc.h"
 
 /** @defgroup SPI 
   * @brief SPI driver modules

@@ -4,7 +4,7 @@
  *   PB7: I2C1_SDA
 */
 
-#include <air32f10x_i2c.h>
+#include <2514F062_i2c.h>
 #include "debug.h"
 
 #define HOST_ADDR   0xA0

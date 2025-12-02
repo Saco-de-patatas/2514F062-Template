@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_sdio.h"
-#include "air32f10x_rcc.h"
+#include "2514F062_sdio.h"
+#include "2514F062_rcc.h"
 
 
 /** @defgroup SDIO 

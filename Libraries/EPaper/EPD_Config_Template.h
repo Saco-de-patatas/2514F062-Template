@@ -49,7 +49,7 @@
 #define _EPD_CONFIG_H_
 
 #include "main.h"
-#include "air32f10x.h"
+#include "2514F062.h"
 #include "debug.h"
 #include <stdint.h>
 #include <stdio.h>

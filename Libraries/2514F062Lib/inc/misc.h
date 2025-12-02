@@ -7,9 +7,9 @@
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x.h"
+#include "2514F062.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 
@@ -30,7 +30,7 @@ typedef struct
   uint8_t NVIC_IRQChannel;                    /*!< Specifies the IRQ channel to be enabled or disabled.
                                                    This parameter can be a value of @ref IRQn_Type 
                                                    (For the complete air32 Devices IRQ Channels list, please
-                                                    refer to air32f10x.h file) */
+                                                    refer to 2514F062.h file) */
 
   uint8_t NVIC_IRQChannelPreemptionPriority;  /*!< Specifies the pre-emption priority for the IRQ channel
                                                    specified in NVIC_IRQChannel. This parameter can be a value

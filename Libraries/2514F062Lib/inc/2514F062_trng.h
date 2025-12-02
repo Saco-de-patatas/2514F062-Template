@@ -6,15 +6,15 @@
  * @brief               : 
  *****************************************************************************/
 
-#ifndef __AIR32F10x_TRNG_H
-#define __AIR32F10x_TRNG_H
+#ifndef __2514F062_TRNG_H
+#define __2514F062_TRNG_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x.h"
+#include "2514F062.h"
 
 typedef enum
 {

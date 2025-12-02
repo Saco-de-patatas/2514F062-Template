@@ -1,7 +1,7 @@
 #ifndef __EEPROM_H__
 #define __EEPROM_H__
 
-#include "air32f10x.h"
+#include "2514F062.h"
 
 #define AIR32F103_PAGE_BYTES 1024
 

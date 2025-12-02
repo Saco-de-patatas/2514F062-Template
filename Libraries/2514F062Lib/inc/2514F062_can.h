@@ -1,15 +1,15 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __AIR32F10x_CAN_H
-#define __AIR32F10x_CAN_H
+#ifndef __2514F062_CAN_H
+#define __2514F062_CAN_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x.h"
+#include "2514F062.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 
@@ -314,11 +314,11 @@ typedef struct
 /** @defgroup CAN_filter_number 
   * @{
   */
-#ifndef air32f10x_CL
+#ifndef 2514F062_CL
   #define IS_CAN_FILTER_NUMBER(NUMBER) ((NUMBER) <= 13)
 #else
   #define IS_CAN_FILTER_NUMBER(NUMBER) ((NUMBER) <= 27)
-#endif /* air32f10x_CL */ 
+#endif /* 2514F062_CL */ 
 /**
   * @}
   */
@@ -659,7 +659,7 @@ void CAN_ClearITPendingBit(CAN_TypeDef* CANx, uint32_t CAN_IT);
 }
 #endif
 
-#endif /* __AIR32F10x_CAN_H */
+#endif /* __2514F062_CAN_H */
 /**
   * @}
   */

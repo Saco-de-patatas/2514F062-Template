@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    system_air32f10x.h
+  * @file    system_2514F062.h
   * @author  MCD Application Team
   * @version V3.5.0
   * @date    11-March-2011
@@ -23,21 +23,21 @@
   * @{
   */
 
-/** @addtogroup air32f10x_system
+/** @addtogroup 2514F062_system
   * @{
   */  
   
 /**
   * @brief Define to prevent recursive inclusion
   */
-#ifndef __SYSTEM_air32f10x_H
-#define __SYSTEM_air32f10x_H
+#ifndef __SYSTEM_2514F062_H
+#define __SYSTEM_2514F062_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif 
 
-/** @addtogroup air32f10x_System_Includes
+/** @addtogroup 2514F062_System_Includes
   * @{
   */
 
@@ -46,7 +46,7 @@
   */
 
 
-/** @addtogroup air32f10x_System_Exported_types
+/** @addtogroup 2514F062_System_Exported_types
   * @{
   */
 
@@ -56,7 +56,7 @@ extern uint32_t SystemCoreClock;          /*!< System Clock Frequency (Core Cloc
   * @}
   */
 
-/** @addtogroup air32f10x_System_Exported_Constants
+/** @addtogroup 2514F062_System_Exported_Constants
   * @{
   */
 
@@ -64,7 +64,7 @@ extern uint32_t SystemCoreClock;          /*!< System Clock Frequency (Core Cloc
   * @}
   */
 
-/** @addtogroup air32f10x_System_Exported_Macros
+/** @addtogroup 2514F062_System_Exported_Macros
   * @{
   */
 
@@ -75,7 +75,7 @@ extern uint32_t SystemCoreClock;          /*!< System Clock Frequency (Core Cloc
   * @}
   */
 
-/** @addtogroup air32f10x_System_Exported_Functions
+/** @addtogroup 2514F062_System_Exported_Functions
   * @{
   */
   
@@ -89,7 +89,7 @@ extern void SystemCoreClockUpdate(void);
 }
 #endif
 
-#endif /*__SYSTEM_air32f10x_H */
+#endif /*__SYSTEM_2514F062_H */
 
 /**
   * @}

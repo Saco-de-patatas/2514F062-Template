@@ -1,8 +1,8 @@
 /**
  * Example of DMA transfer complete interrupt in circular mode
 */
-#include <air32f10x_adc.h>
-#include <air32f10x_dma.h>
+#include <2514F062_adc.h>
+#include <2514F062_dma.h>
 #include "debug.h"
 
 #define BUFF_SIZE 8000

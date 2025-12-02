@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_adc.h"
-#include "air32f10x_rcc.h"
+#include "2514F062_adc.h"
+#include "2514F062_rcc.h"
 
 /** @defgroup ADC 
   * @brief ADC driver modules

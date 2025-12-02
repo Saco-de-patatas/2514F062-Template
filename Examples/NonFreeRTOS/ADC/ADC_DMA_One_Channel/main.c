@@ -1,5 +1,5 @@
-#include <air32f10x_adc.h>
-#include <air32f10x_dma.h>
+#include <2514F062_adc.h>
+#include <2514F062_dma.h>
 #include "debug.h"
 
 uint16_t TxBuf[1024];

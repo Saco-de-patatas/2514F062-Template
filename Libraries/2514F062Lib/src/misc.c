@@ -1,7 +1,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "misc.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 

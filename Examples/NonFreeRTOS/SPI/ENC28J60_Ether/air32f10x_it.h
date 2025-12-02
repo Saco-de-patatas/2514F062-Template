@@ -1,7 +1,7 @@
-#ifndef __AIR32F10x_IT_H
-#define __AIR32F10x_IT_H
+#ifndef __2514F062_IT_H
+#define __2514F062_IT_H
 
-#include "air32f10x.h"
+#include "2514F062.h"
 
 
 void NMI_Handler(void);
@@ -14,4 +14,4 @@ void DebugMon_Handler(void);
 void PendSV_Handler(void);
 void SysTick_Handler(void);
 
-#endif /* __AIR32F10x_IT_H */
+#endif /* __2514F062_IT_H */

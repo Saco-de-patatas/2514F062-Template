@@ -1,15 +1,15 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __AIR32F10x_I2C_H
-#define __AIR32F10x_I2C_H
+#ifndef __2514F062_I2C_H
+#define __2514F062_I2C_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x.h"
+#include "2514F062.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 
@@ -586,7 +586,7 @@ void I2C_FastModeDutyCycleConfig(I2C_TypeDef* I2Cx, uint16_t I2C_DutyCycle);
  *       - This function is suitable for the same applications above but it allows to
  *         overcome the limitations of I2C_GetFlagStatus() function (see below).
  *         The returned value could be compared to events already defined in the 
- *         library (air32f10x_i2c.h) or to custom values defined by user.
+ *         library (2514F062_i2c.h) or to custom values defined by user.
  *       - This function is suitable when multiple flags are monitored at the same time.
  *       - At the opposite of I2C_CheckEvent() function, this function allows user to
  *         choose when an event is accepted (when all events flags are set and no 
@@ -646,7 +646,7 @@ void I2C_ClearITPendingBit(I2C_TypeDef* I2Cx, uint32_t I2C_IT);
 }
 #endif
 
-#endif /*__AIR32F10x_I2C_H */
+#endif /*__2514F062_I2C_H */
 /**
   * @}
   */ 

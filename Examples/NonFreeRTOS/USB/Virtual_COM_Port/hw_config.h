@@ -1,7 +1,7 @@
 #ifndef __HW_CONFIG_H
 #define __HW_CONFIG_H
 
-#include "air32f10x.h"
+#include "2514F062.h"
 #include "usb_type.h" 
 
  

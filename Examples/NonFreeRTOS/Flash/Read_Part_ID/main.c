@@ -3,7 +3,7 @@
  * 
 */
 #include <string.h>
-#include <air32f10x_adc.h>
+#include <2514F062_adc.h>
 #include "debug.h"
 
 /**

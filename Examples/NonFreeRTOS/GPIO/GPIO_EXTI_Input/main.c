@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdio.h>
 #include "debug.h"
-#include "air32f10x.h"
-#include "air32f10x_exti.h"
+#include "2514F062.h"
+#include "2514F062_exti.h"
 #include "misc.h"
 
 

@@ -6,10 +6,10 @@
 #ifndef __DEBUG_H
 #define __DEBUG_H 	
 
-#include "air32f10x.h"
-#include "air32f10x_rcc.h"
-#include "air32f10x_gpio.h"
-#include "air32f10x_usart.h"
+#include "2514F062.h"
+#include "2514F062_rcc.h"
+#include "2514F062_gpio.h"
+#include "2514F062_usart.h"
 #include "misc.h"
 #include "stdio.h"
 

@@ -6,7 +6,7 @@
  * - AIR32F103CCT6/RPT6 page size is 2KB:   set AIR32F103_PAGE_BYTES to 2048
 */
 #include <string.h>
-#include <air32f10x_adc.h>
+#include <2514F062_adc.h>
 #include <eeprom.h>
 #include "debug.h"
 

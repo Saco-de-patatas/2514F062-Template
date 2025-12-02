@@ -1,5 +1,5 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_it.h" 
+#include "2514F062_it.h" 
 
 
  
@@ -57,8 +57,8 @@ void SysTick_Handler(void)
 }
 
 /******************************************************************************/
-/*                 air32F10x Peripherals Interrupt Handlers                   */
+/*                 2514F062 Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */
 /*  available peripheral interrupt handler's name please refer to the startup */
-/*  file (startup_air32f10x.s).                                            */
+/*  file (startup_2514F062.s).                                            */
 /******************************************************************************/

@@ -7,9 +7,9 @@
  * filled_sema: indicate the number of filled slots, taken by consumer and given by producer
  */
 #include <stdlib.h>
-#include <air32f10x.h>
-#include <air32f10x_gpio.h>
-#include <air32f10x_rcc.h>
+#include <2514F062.h>
+#include <2514F062_gpio.h>
+#include <2514F062_rcc.h>
 #include <string.h>
 #include "debug.h"
 #include "FreeRTOS.h"

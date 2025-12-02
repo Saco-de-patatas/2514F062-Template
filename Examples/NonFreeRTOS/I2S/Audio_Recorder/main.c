@@ -24,10 +24,10 @@
  * 3. Change I2S standard according to your I2S device: LSB for PT8211, Phillips for MAX98357A
  * 
 */
-#include <air32f10x_adc.h>
-#include <air32f10x_dma.h>
-#include <air32f10x_spi.h>
-#include <air32f10x_tim.h>
+#include <2514F062_adc.h>
+#include <2514F062_dma.h>
+#include <2514F062_spi.h>
+#include <2514F062_tim.h>
 #include "debug.h"
 
 #define AUDIO_FREQ 8000

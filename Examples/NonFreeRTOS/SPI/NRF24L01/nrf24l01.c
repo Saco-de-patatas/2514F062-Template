@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "nrf24l01.h"
 #include "debug.h"
-#include "air32f10x_spi.h"
+#include "2514F062_spi.h"
 
 uint8_t RX_BUF[NRF24L01_PLOAD_WIDTH];
 uint8_t TX_BUF[NRF24L01_PLOAD_WIDTH];

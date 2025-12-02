@@ -1,7 +1,7 @@
 #ifndef _NRF24L01_H
 #define _NRF24L01_H
 
-#include <air32f10x.h>
+#include <2514F062.h>
 
 #define NRF24L01_SPIx     SPI1
 #define NRF24L01_GPIOx    GPIOB

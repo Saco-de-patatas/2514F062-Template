@@ -2,12 +2,12 @@
   * @{
   */
 
-/** @addtogroup air32f10x_system
+/** @addtogroup 2514F062_system
   * @{
   */  
   
 
-#include "air32f10x.h"
+#include "2514F062.h"
 
 
 /*!< Uncomment the following line if you need to relocate your vector Table in
@@ -24,7 +24,7 @@
   * @}
   */
 
-/** @addtogroup air32f10x_System_Private_Macros
+/** @addtogroup 2514F062_System_Private_Macros
   * @{
   */
 
@@ -32,7 +32,7 @@
   * @}
   */
 
-/** @addtogroup air32f10x_System_Private_Variables
+/** @addtogroup 2514F062_System_Private_Variables
   * @{
   */
 
@@ -57,7 +57,7 @@ __attribute__((weak))  void clockFailure(void){
   NVIC_SystemReset();     /* Timeout reached, oscillator not working */
 }
 
-/** @addtogroup air32f10x_System_Private_FunctionPrototypes
+/** @addtogroup 2514F062_System_Private_FunctionPrototypes
   * @{
   */
 
@@ -74,7 +74,7 @@ static void SetSysClockToHSE(void);
   * @}
   */
 
-/** @addtogroup air32f10x_System_Private_Functions
+/** @addtogroup 2514F062_System_Private_Functions
   * @{
   */
 
@@ -253,7 +253,8 @@ static void SetSysClockToHSE(void)
         else
             PLL_M = ((PLL_M-17) | 1<<10 )<<18;                                  /* High speed PLL setting*/
 
-        AIR_SysFreq_Set(PLL_M, flash_div, 0, 1);                                /* Internal ROM hack to enable fast PLL */
+        //AIR_SysFreq_Set(PLL_M, flash_div, 0, 1);                                /* Internal ROM hack to enable fast PLL */
+		2514_SysFreq_Set(0, PLL_M, flash_div); 
      
         RCC->CFGR &= (uint32_t)((uint32_t)~(RCC_CFGR_PLLSRC | RCC_CFGR_PLLXTPRE |
                                                 RCC_CFGR_PLLMULL));             /* PLL configuration */

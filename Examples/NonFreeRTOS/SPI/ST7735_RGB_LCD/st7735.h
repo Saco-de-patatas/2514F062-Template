@@ -1,6 +1,6 @@
 #ifndef __ST7735_H
 #define __ST7735_H			    
-#include "air32f10x.h"
+#include "2514F062.h"
 
 // CS
 #define ST7735_CS_PORT      GPIOA

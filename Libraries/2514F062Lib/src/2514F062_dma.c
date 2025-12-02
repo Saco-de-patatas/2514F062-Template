@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_dma.h"
-#include "air32f10x_rcc.h"
+#include "2514F062_dma.h"
+#include "2514F062_rcc.h"
 
 
 /** @defgroup DMA 

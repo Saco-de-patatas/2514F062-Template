@@ -1,15 +1,15 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __AIR32F10x_RCC_H
-#define __AIR32F10x_RCC_H
+#ifndef __2514F062_RCC_H
+#define __2514F062_RCC_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x.h"
+#include "2514F062.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 
@@ -492,13 +492,13 @@ typedef enum
 
 #define 2514_SysFreq_Set   (*((void (*)(uint32_t, uint32_t, FlashClkDiv))(*(uint32_t *)0x1FFFD014)))
 
-uint32_t AIR_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashClkDiv Latency);
+uint32_t 2514_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashClkDiv Latency);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* __AIR32F10x_RCC_H */
+#endif /* __2514F062_RCC_H */
 /**
   * @}
   */

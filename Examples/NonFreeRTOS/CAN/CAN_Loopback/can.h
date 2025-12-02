@@ -1,7 +1,7 @@
 #ifndef __CAN_H
 #define __CAN_H
 
-#include "air32f10x.h"
+#include "2514F062.h"
 
 #define CAN_RX0_INT_ENABLE 0
 

@@ -1,15 +1,15 @@
 /**
  * CoreMark Benchmark
  * 
- * -- Change system clock by changing SYSCLK_HSE in air32f10x_conf.h
+ * -- Change system clock by changing SYSCLK_HSE in 2514F062_conf.h
  * 
 */
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include "debug.h"
-#include "air32f10x.h"
-#include "air32f10x_tim.h"
+#include "2514F062.h"
+#include "2514F062_tim.h"
 #include "misc.h"
 
 RCC_ClocksTypeDef clocks;

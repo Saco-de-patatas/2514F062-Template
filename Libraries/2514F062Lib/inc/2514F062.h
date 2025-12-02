@@ -2,12 +2,12 @@
   * @{
   */
 
-/** @addtogroup air32f10x
+/** @addtogroup 2514F062
   * @{
   */
     
-#ifndef __AIR32F10x_H
-#define __AIR32F10x_H
+#ifndef __2514F062_H
+#define __2514F062_H
 
 #ifdef __cplusplus
  extern "C" {
@@ -44,16 +44,16 @@
 #define HSI_VALUE    ((uint32_t)8000000) /*!< Value of the Internal oscillator in Hz*/
 
 /**
- * @brief air32F10x Standard Peripheral Library version number
+ * @brief 2514F062 Standard Peripheral Library version number
    */
-#define __AIR32F10x_STDPERIPH_VERSION_MAIN   (0x03) /*!< [31:24] main version */                                  
-#define __AIR32F10x_STDPERIPH_VERSION_SUB1   (0x05) /*!< [23:16] sub1 version */
-#define __AIR32F10x_STDPERIPH_VERSION_SUB2   (0x00) /*!< [15:8]  sub2 version */
-#define __AIR32F10x_STDPERIPH_VERSION_RC     (0x00) /*!< [7:0]  release candidate */ 
-#define __AIR32F10x_STDPERIPH_VERSION       ( (__AIR32F10x_STDPERIPH_VERSION_MAIN << 24)\
-                                             |(__AIR32F10x_STDPERIPH_VERSION_SUB1 << 16)\
-                                             |(__AIR32F10x_STDPERIPH_VERSION_SUB2 << 8)\
-                                             |(__AIR32F10x_STDPERIPH_VERSION_RC))
+#define __2514F062_STDPERIPH_VERSION_MAIN   (0x03) /*!< [31:24] main version */                                  
+#define __2514F062_STDPERIPH_VERSION_SUB1   (0x05) /*!< [23:16] sub1 version */
+#define __2514F062_STDPERIPH_VERSION_SUB2   (0x00) /*!< [15:8]  sub2 version */
+#define __2514F062_STDPERIPH_VERSION_RC     (0x00) /*!< [7:0]  release candidate */ 
+#define __2514F062_STDPERIPH_VERSION       ( (__2514F062_STDPERIPH_VERSION_MAIN << 24)\
+                                             |(__2514F062_STDPERIPH_VERSION_SUB1 << 16)\
+                                             |(__2514F062_STDPERIPH_VERSION_SUB2 << 8)\
+                                             |(__2514F062_STDPERIPH_VERSION_RC))
 
 /**
   * @}
@@ -71,7 +71,7 @@
 #define __Vendor_SysTickConfig    0 /*!< Set to 1 if different SysTick Config is used */
 
 /**
- * @brief air32F10x Interrupt Number Definition, according to the selected device 
+ * @brief 2514F062 Interrupt Number Definition, according to the selected device 
  *        in @ref Library_configuration_section 
  */
 typedef enum IRQn
@@ -159,14 +159,14 @@ typedef enum IRQn
   */
 
 #include "core_cm3.h"
-#include "system_air32f10x.h"
+#include "system_2514F062.h"
 #include <stdint.h>
 
 /** @addtogroup Exported_types
   * @{
   */  
 
-/*!< air32F10x Standard Peripheral Library old types (maintained for legacy purpose) */
+/*!< 2514F062 Standard Peripheral Library old types (maintained for legacy purpose) */
 typedef int32_t  s32;
 typedef int16_t s16;
 typedef int8_t  s8;
@@ -206,7 +206,7 @@ typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
 
 typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;
 
-/*!< air32F10x Standard Peripheral Library old definitions (maintained for legacy purpose) */
+/*!< 2514F062 Standard Peripheral Library old definitions (maintained for legacy purpose) */
 #define HSEStartUp_TimeOut   HSE_STARTUP_TIMEOUT
 #define HSE_Value            HSE_VALUE
 #define HSI_Value            HSI_VALUE
@@ -7178,7 +7178,7 @@ typedef struct
   */ 
 
 // #ifdef USE_STDPERIPH_DRIVER
-  #include "air32f10x_conf.h"
+  #include "2514F062_conf.h"
 // #endif
 
 /** @addtogroup Exported_macro
@@ -7207,7 +7207,7 @@ typedef struct
 }
 #endif
 
-#endif /* __AIR32F10x_H */
+#endif /* __2514F062_H */
 
 /**
   * @}

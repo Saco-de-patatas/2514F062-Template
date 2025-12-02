@@ -1,7 +1,7 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_rcc.h"
+#include "2514F062_rcc.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 
@@ -1089,7 +1089,7 @@ void RCC_ClearITPendingBit(uint8_t RCC_IT)
   *(__IO uint8_t *) CIR_BYTE3_ADDRESS = RCC_IT;
 }
 
-uint32_t AIR_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashClkDiv Latency)
+uint32_t 2514_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashClkDiv Latency)
 {
     assert_param(IS_RCC_PLL_SOURCE(RCC_PLLSource));
     assert_param(IS_RCC_PLL_MUL(RCC_PLLMul));
@@ -1100,7 +1100,7 @@ uint32_t AIR_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashClk
     SYSCFG->SYSCFG_LOCK = 0xcded3526;
     *(__IO uint32_t *)(FLASH_R_BASE + 0x28C) = 0xa5a5a5a5; // Unlock QSPI
 
-    AIR_SysFreq_Set(RCC_PLLMul, Latency, 0, 1);
+    2514_SysFreq_Set(RCC_PLLMul, Latency, 0, 1);
     RCC->CFGR = (RCC->CFGR & ~0x00030000) | RCC_PLLSource;
 
     // Restore previous config

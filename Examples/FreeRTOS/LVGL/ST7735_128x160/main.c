@@ -14,9 +14,9 @@
  * BOARD: AIR32F103CCT6 / AIR32F103RPT6
  * LCD:   ST7735 128x160 RGB LCD
  */
-#include <air32f10x.h>
-#include <air32f10x_gpio.h>
-#include <air32f10x_rcc.h>
+#include <2514F062.h>
+#include <2514F062_gpio.h>
+#include <2514F062_rcc.h>
 #include "debug.h"
 #include "st7735.h"
 

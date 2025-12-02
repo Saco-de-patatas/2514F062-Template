@@ -4,7 +4,7 @@
  * PA5 -> SCK
  * PA7 -> DIN
 */
-#include "air32f10x_spi.h"
+#include "2514F062_spi.h"
 #include "debug.h"
 
 #define DECODE_MODE  0x09

@@ -1,15 +1,15 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __AIR32F10x_EXTI_H
-#define __AIR32F10x_EXTI_H
+#ifndef __2514F062_EXTI_H
+#define __2514F062_EXTI_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x.h"
+#include "2514F062.h"
 
-/** @addtogroup air32f10x_StdPeriph_Driver
+/** @addtogroup 2514F062_StdPeriph_Driver
   * @{
   */
 
@@ -146,7 +146,7 @@ void EXTI_ClearITPendingBit(uint32_t EXTI_Line);
 }
 #endif
 
-#endif /* __AIR32F10x_EXTI_H */
+#endif /* __2514F062_EXTI_H */
 /**
   * @}
   */

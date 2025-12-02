@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_pwr.h"
-#include "air32f10x_rcc.h"
+#include "2514F062_pwr.h"
+#include "2514F062_rcc.h"
 
 /** @defgroup PWR 
   * @brief PWR driver modules

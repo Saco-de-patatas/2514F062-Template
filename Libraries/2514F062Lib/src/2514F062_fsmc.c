@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
-#include "air32f10x_fsmc.h"
-#include "air32f10x_rcc.h"
+#include "2514F062_fsmc.h"
+#include "2514F062_rcc.h"
 
 /** @addtogroup STM32F10x_StdPeriph_Driver
   * @{

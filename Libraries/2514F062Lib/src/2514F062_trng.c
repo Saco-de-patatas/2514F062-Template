@@ -1,5 +1,5 @@
 /************************ (C) COPYRIGHT Megahuntmicro *************************
- * @file                : air32f10x_trng.c
+ * @file                : 2514F062_trng.c
  * @author              : Megahuntmicro
  * @version             : V1.0.0
  * @date                : 
@@ -7,7 +7,7 @@
  *****************************************************************************/
  
 /* Includes -----------------------------------------------------------------*/ 
-#include "air32f10x_trng.h"
+#include "2514F062_trng.h"
 
 /**
   * @method	TRNG_Get

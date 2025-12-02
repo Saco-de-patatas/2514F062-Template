@@ -1,6 +1,6 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __AIR32F10x_CONF_H
-#define __AIR32F10x_CONF_H
+#ifndef __2514F062_CONF_H
+#define __2514F062_CONF_H
 
 /* Set system clock speed in MHZ
 *  It will revert to HSI mode if not defined.
@@ -11,28 +11,28 @@
 
 /* Includes ------------------------------------------------------------------*/
 /* Uncomment/Comment the line below to enable/disable peripheral header file inclusion */
-#include "air32f10x_adc.h"
-#include "air32f10x_bkp.h"
-#include "air32f10x_can.h"
-#include "air32f10x_cec.h"
-#include "air32f10x_crc.h"
-#include "air32f10x_dac.h"
-#include "air32f10x_dbgmcu.h"
-#include "air32f10x_dma.h"
-#include "air32f10x_exti.h"
-#include "air32f10x_flash.h"
-#include "air32f10x_fsmc.h"
-#include "air32f10x_gpio.h"
-#include "air32f10x_i2c.h"
-#include "air32f10x_iwdg.h"
-#include "air32f10x_pwr.h"
-#include "air32f10x_rcc.h"
-#include "air32f10x_rtc.h"
-#include "air32f10x_sdio.h"
-#include "air32f10x_spi.h"
-#include "air32f10x_tim.h"
-#include "air32f10x_usart.h"
-#include "air32f10x_wwdg.h"
+#include "2514F062_adc.h"
+#include "2514F062_bkp.h"
+#include "2514F062_can.h"
+#include "2514F062_cec.h"
+#include "2514F062_crc.h"
+#include "2514F062_dac.h"
+#include "2514F062_dbgmcu.h"
+#include "2514F062_dma.h"
+#include "2514F062_exti.h"
+#include "2514F062_flash.h"
+#include "2514F062_fsmc.h"
+#include "2514F062_gpio.h"
+#include "2514F062_i2c.h"
+#include "2514F062_iwdg.h"
+#include "2514F062_pwr.h"
+#include "2514F062_rcc.h"
+#include "2514F062_rtc.h"
+#include "2514F062_sdio.h"
+#include "2514F062_spi.h"
+#include "2514F062_tim.h"
+#include "2514F062_usart.h"
+#include "2514F062_wwdg.h"
 #include "misc.h" /* High level functions for NVIC and SysTick (add-on to CMSIS functions) */
 
 /* Exported types ------------------------------------------------------------*/
@@ -58,4 +58,4 @@
   #define assert_param(expr) ((void)0)
 #endif /* USE_FULL_ASSERT */
 
-#endif /* __AIR32F10x_CONF_H */
+#endif /* __2514F062_CONF_H */

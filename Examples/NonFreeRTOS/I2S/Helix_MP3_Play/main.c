@@ -13,8 +13,8 @@
  * - Change I2S standard according to your I2S device: LSB for PT8211, Phillips for MAX98357A
  * - System clock should be above 192MHz, otherwise there will be obvious lags in the sound
 */
-#include "air32f10x_spi.h"
-#include "air32f10x_dma.h"
+#include "2514F062_spi.h"
+#include "2514F062_dma.h"
 #include "debug.h"
 #include "mp3dec.h"
 #include "mp3_data.h"
