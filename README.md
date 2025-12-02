@@ -28,7 +28,7 @@
   * The hidden RAM can be unlocked by the same special registers of the MH2103A, however the keys are different. The hack has been integrated into startup_air32f10x.s. Thanks to @deividAlfa for the original integration.
  * Other variants:
   * There is at least another 2 variants sharing the same core as the MH2103x
-    * The HL2103A[C] (Plenty of documentation in english)  Visit [HLKP](hlkpint.com) for more information, datasheets, STM32 migration...
+    * The HL2103A[C] (Plenty of documentation in english)  Visit [HLKP](https:\\www.hlkpint.com) for more information, datasheets, STM32 migration...
     * The networking SoC called W55MH32, with a great amount of documentation, an excellent SDK, and many tutorials out there in internet.
 
 ## Documents
