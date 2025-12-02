@@ -33,7 +33,7 @@
 
 ## Pictures for identificating the chip...
 ![The J-LinkOB with this MH2103 variant](Pics/20251202_140942.jpg)
-![The El CheapoPill]Pics/(IMG_20251128_152500.jpg)
+![The El CheapoPill](Pics/IMG_20251128_152500.jpg)
 
 ## Documents
 
