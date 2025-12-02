@@ -1,6 +1,6 @@
 # About
 
-* 2514F062 / El CheapoPill template project for GNU Arm Embedded Toolchain
+* 2514F062 / El CheapoPill (marked on the back as "V1387/1388") template project for GNU Arm Embedded Toolchain
 * This OEM chip found within extremelly cheap Bluepills and J-LinkOB is also a Megahunt variant of MH2103 with different unlock keys.
 * Supported programmers: J-Link, STLink, DAPLink/PyOCD
 * Supported IDE: VSCode
@@ -33,6 +33,7 @@
 
 ## Pictures for identificating the chip...
 ![The J-LinkOB with this MH2103 variant](Pics/20251202_140942.jpg)
+![The El CheapoPill]Pics/(IMG_20251128_152500.jpg)
 
 ## Documents
 
