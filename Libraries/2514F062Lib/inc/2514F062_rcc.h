@@ -488,7 +488,9 @@ typedef enum
   FLASH_Div_16 = 5,
 } FlashClkDiv;
 
-#define AIR_SysFreq_Set   (*((void (*)(uint32_t, FlashClkDiv , uint8_t, uint8_t))(*(uint32_t *)0x1FFFD00C)))
+//#define AIR_SysFreq_Set   (*((void (*)(uint32_t, FlashClkDiv , uint8_t, uint8_t))(*(uint32_t *)0x1FFFD00C)))
+
+#define 2514_SysFreq_Set   (*((void (*)(uint32_t, uint32_t, FlashClkDiv))(*(uint32_t *)0x1FFFD014)))
 
 uint32_t AIR_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashClkDiv Latency);
 

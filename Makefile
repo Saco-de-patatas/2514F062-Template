@@ -41,19 +41,19 @@ JLINK_DEVICE	?= STM32F103CB
 OPENOCD			?= openocd
 # path to PyOCD
 PYOCD_EXE		?= pyocd
-# options: air32f103cb, air32f103cc, air32f103rp
-PYOCD_DEVICE	?= air32f103cb
+# options: 2514F062
+PYOCD_DEVICE	?= 2514F062
 
 ##### Paths ############
 
 # Link descript file for this chip
-LDSCRIPT		= Libraries/LDScripts/air32f103cbt6.ld
+LDSCRIPT		= Libraries/LDScripts/2514F062.ld
 # Library build flags
 LIB_FLAGS       = USE_STDPERIPH_DRIVER
 
 # C source folders
 CDIRS	:= User \
-		Libraries/AIR32F10xLib/src \
+		Libraries/2514F062Lib/src \
 		Libraries/Debug
 # C source files (if there are any single ones)
 CFILES := 
@@ -61,12 +61,12 @@ CFILES :=
 # ASM source folders
 ADIRS	:= User
 # ASM single files
-AFILES	:= Libraries/DeviceSupport/startup/arm-gcc/startup_air32f10x.s
+AFILES	:= Libraries/DeviceSupport/startup/arm-gcc/startup_2514F062.s
 
 # Include paths
 INCLUDES	:= User \
 			Libraries/CMSIS/Core/Include \
-			Libraries/AIR32F10xLib/inc \
+			Libraries/2514F062Lib/inc \
 			Libraries/Debug \
 
 ##### Optional Libraries ############
@@ -104,8 +104,8 @@ endif
 
 
 ifeq ($(USE_USB),y)
-CDIRS		+= Libraries/AIR32_USB-FS-Device_Driver/src
-INCLUDES	+= Libraries/AIR32_USB-FS-Device_Driver/inc
+CDIRS		+= Libraries/2514_USB-FS-Device_Driver/src
+INCLUDES	+= Libraries/2514_USB-FS-Device_Driver/inc
 endif
 
 ifeq ($(USE_HELIX),y)
