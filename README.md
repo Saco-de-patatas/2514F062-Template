@@ -35,12 +35,16 @@
 
 The J-LinkOB sold in Aliexpress as for 2025.
 ![The J-LinkOB with this MH2103 variant](Pics/20251202_140942.jpg)
+
 The "El CheapoPill" (Many sellers that were selling bluepills with a renamed MH2103ACCT6 (256KB(F)/64KB(R)) now sell this version.
 ![The El CheapoPill](Pics/IMG_20251128_152500.jpg)
+
 Running the TRNG demo in a "El cheapoPill" (using standard xtal and x16 PLL multiplier)
 ![TRNG at 128MHz](Pics/TRNG_TEST.PNG)
+
 Running the TRNG demo in a "El CheapoPill", crystal replaced with one of 16MHz. Used for testing the stability of the silicon at this speed.
 ![TRNG at 256MHz](Pics/SPEED_AND_TRNG_TEST.PNG)
+
 
 
 ## Documents
