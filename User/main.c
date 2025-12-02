@@ -13,7 +13,7 @@ void GPIO_Configuration(void)
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-  GPIO_Init(GPIOB, &GPIO_InitStructure);
+  GPIO_Init(GPIOC, &GPIO_InitStructure);
 }
 
 int main(void)
@@ -32,9 +32,9 @@ int main(void)
 
   while (1)
   {
-    GPIO_SetBits(GPIOB, GPIO_Pin_13);
+    GPIO_SetBits(GPIOC, GPIO_Pin_13);
     Delay_Ms(200);
-    GPIO_ResetBits(GPIOB, GPIO_Pin_13);
+    GPIO_ResetBits(GPIOC, GPIO_Pin_13);
     Delay_Ms(200);
   }
 }

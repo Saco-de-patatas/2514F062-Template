@@ -163,7 +163,7 @@ void TRNG_Out(FunctionalState NewState)
 	if (NewState != DISABLE)
 	{
 		RCC->RCC_SYSCFG_CONFIG = 0x01;
-		SYSCFG->SYSCFG_LOCK = 0xCDED3526;
+		SYSCFG->SYSCFG_LOCK = 0xD9A25E3A;
 		SYSCFG->SSC_CLK_EN |= TRNG_RNG_ENABLE;
 	}
 	else

@@ -23,7 +23,7 @@ USE_LVGL		?= n
 # Build with Waveshare e-paper lib, y:yes, n:no
 USE_EPAPER		?= n
 # Programmer, jlink, stlink, cmsis-dap, pyocd
-FLASH_PROGRM    ?= stlink
+FLASH_PROGRM    ?= pyocd
 
 
 ##### Toolchains #######
@@ -44,7 +44,7 @@ OPENOCD			?= openocd
 # path to PyOCD
 PYOCD_EXE		?= pyocd
 # options: 2514F062
-PYOCD_DEVICE	?= 2514F062
+PYOCD_DEVICE	?= air32F103cb
 
 ##### Paths ############
 
