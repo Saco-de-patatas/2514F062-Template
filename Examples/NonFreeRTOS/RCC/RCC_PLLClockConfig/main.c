@@ -50,7 +50,7 @@ int main(void)
            (float)clocks.SYSCLK_Frequency / 1000000, (float)clocks.HCLK_Frequency / 1000000,
            (float)clocks.PCLK1_Frequency / 1000000, (float)clocks.PCLK2_Frequency / 1000000, 
 		   (float)clocks.ADCCLK_Frequency / 1000000);
-    printf("AIR32F103 Clock Config Test\n");
+    printf("2514F062 Clock Config Test\n");
     Delay_Ms(1000);
     printf("SystemClk:%ld\r\n", SystemCoreClock);
     Delay_Ms(1000);

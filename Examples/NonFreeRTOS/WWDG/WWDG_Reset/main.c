@@ -12,7 +12,7 @@ int main(void)
     
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_WWDG, ENABLE);
 
-    printf("AIR32F103 WWDG Test.\n");
+    printf("2514F062 WWDG Test.\n");
     
     WWDG_SetPrescaler(WWDG_Prescaler_8);
     WWDG_SetWindowValue(0x5F);

@@ -44,7 +44,7 @@ int main(void)
            (float)clocks.SYSCLK_Frequency / 1000000, (float)clocks.HCLK_Frequency / 1000000,
            (float)clocks.PCLK1_Frequency / 1000000, (float)clocks.PCLK2_Frequency / 1000000, 
 		   (float)clocks.ADCCLK_Frequency / 1000000);
-    printf("AIR32F103 Chip Part ID Test - Read from address: 0x%08X\n", PART_ID_ADDR);
+    printf("2514F062 Chip Part ID Test - Read from address: 0x%08X\n", PART_ID_ADDR);
     APP_FlashRead(PART_ID_ADDR, (uint16_t *)&chipId, 2);
     printf("0x%08lX\r\n", chipId);
     while (1);

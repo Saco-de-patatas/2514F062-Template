@@ -23,7 +23,7 @@ int main(void)
   printf("SYSCLK: %ld, HCLK: %ld, PCLK1: %ld, PCLK2: %ld, ADCCLK: %ld\n",
          clocks.SYSCLK_Frequency, clocks.HCLK_Frequency,
          clocks.PCLK1_Frequency, clocks.PCLK2_Frequency, clocks.ADCCLK_Frequency);
-  printf("AIR32F103 USB Vritual Serial Port Demo.\n");
+  printf("2514F062 USB Vritual Serial Port Demo.\n");
 
   Delay_Ms(1800);
   USB_Port_Set(0); // Disconnect

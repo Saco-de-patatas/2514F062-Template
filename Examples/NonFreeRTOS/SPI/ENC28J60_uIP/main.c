@@ -108,7 +108,7 @@ int main(void)
            (float)clocks.SYSCLK_Frequency / 1000000, (float)clocks.HCLK_Frequency / 1000000,
            (float)clocks.PCLK1_Frequency / 1000000, (float)clocks.PCLK2_Frequency / 1000000, 
 		   (float)clocks.ADCCLK_Frequency / 1000000);
-    printf("AIR32F103 uIP/ENC28J60 Demo\r\n");
+    printf("2514F062 uIP/ENC28J60 Demo\r\n");
 
     SPI1_Init();
     TIM1_Init();

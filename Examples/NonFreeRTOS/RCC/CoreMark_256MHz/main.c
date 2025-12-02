@@ -41,7 +41,7 @@ void main_original(void)
     Delay_Init();
     USART_Printf_Init(115200);
 
-    printf("AIR32F103 CoreMark\n");
+    printf("2514F062 CoreMark\n");
     RCC_GetClocksFreq(&clocks);
     printf("SYSCLK: %ld, HCLK: %ld, PCLK1: %ld, PCLK2: %ld, ADCCLK: %ld\n",
                clocks.SYSCLK_Frequency, clocks.HCLK_Frequency,

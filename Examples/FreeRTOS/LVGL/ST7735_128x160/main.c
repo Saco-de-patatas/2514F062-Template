@@ -113,7 +113,7 @@ int main(void)
   printf("SYSCLK: %ld, HCLK: %ld, PCLK1: %ld, PCLK2: %ld, ADCCLK: %ld\n",
          clocks.SYSCLK_Frequency, clocks.HCLK_Frequency,
          clocks.PCLK1_Frequency, clocks.PCLK2_Frequency, clocks.ADCCLK_Frequency);
-  printf("AIR32F103 FreeRTOS LVGL Demo.\r\n");
+  printf("2514F062 FreeRTOS LVGL Demo.\r\n");
 
   APP_GPIO_Config();
   APP_SPI_Config();

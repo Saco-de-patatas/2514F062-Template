@@ -39,7 +39,7 @@ int main(void)
            (float)clocks.SYSCLK_Frequency / 1000000, (float)clocks.HCLK_Frequency / 1000000,
            (float)clocks.PCLK1_Frequency / 1000000, (float)clocks.PCLK2_Frequency / 1000000, 
 		   (float)clocks.ADCCLK_Frequency / 1000000);
-    printf("AIR32F103 Flash EEPROM Test, Write To Address: 0x%08X\n", FLASH_ADDR);
+    printf("2514F062 Flash EEPROM Test, Write To Address: 0x%08X\n", FLASH_ADDR);
 
     for (i = 0; i < TEST_SIZE; i++)
     {

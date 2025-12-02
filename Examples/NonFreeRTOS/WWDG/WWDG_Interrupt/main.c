@@ -13,7 +13,7 @@ int main(void)
 
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_WWDG, ENABLE);
 
-    printf("AIR32F103 WWDG Int.\n");
+    printf("2514F062 WWDG Int.\n");
     printf("Interrupt Feed Dog\n");
 
     WWDG_SetPrescaler(WWDG_Prescaler_8);

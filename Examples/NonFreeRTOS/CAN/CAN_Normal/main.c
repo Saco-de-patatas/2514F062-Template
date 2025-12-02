@@ -48,7 +48,7 @@ int main(void)
   printf("SYSCLK: %ld, HCLK: %ld, PCLK1: %ld, PCLK2: %ld, ADCCLK: %ld\r\n",
          clocks.SYSCLK_Frequency, clocks.HCLK_Frequency,
          clocks.PCLK1_Frequency, clocks.PCLK2_Frequency, clocks.ADCCLK_Frequency);
-  printf("AIR32F103 CAN Normal Transmit Demo. ID: %03x\r\n", ID_RECEIV);
+  printf("2514F062 CAN Normal Transmit Demo. ID: %03x\r\n", ID_RECEIV);
 
   // loop back mode, baud rate 500Kbps(when hse = 216MHz)
   CAN_Mode_Init(CAN_SJW_1tq, CAN_BS2_8tq, CAN_BS1_9tq, 24, CAN_Mode_Normal);

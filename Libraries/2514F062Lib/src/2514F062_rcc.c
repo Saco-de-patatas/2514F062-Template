@@ -1095,9 +1095,9 @@ uint32_t 2514_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashCl
     assert_param(IS_RCC_PLL_MUL(RCC_PLLMul));
 
     RCC->RCC_SYSCFG_CONFIG = 1;           // Unlock sys_cfg gate control
-    SYSCFG->SYSCFG_LOCK = 0xa7d93a86;     // Unlock from level 1 to 3
-    SYSCFG->SYSCFG_LOCK = 0xab12dfcd;
-    SYSCFG->SYSCFG_LOCK = 0xcded3526;
+    SYSCFG->SYSCFG_LOCK = 0xA8561D89;     // Unlock from level 1 to 3
+    SYSCFG->SYSCFG_LOCK = 0x308684D1;
+    SYSCFG->SYSCFG_LOCK = 0xD9A25E3A;
     *(__IO uint32_t *)(FLASH_R_BASE + 0x28C) = 0xa5a5a5a5; // Unlock QSPI
 
     2514_SysFreq_Set(RCC_PLLMul, Latency, 0, 1);
@@ -1105,9 +1105,9 @@ uint32_t 2514_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashCl
 
     // Restore previous config
     RCC->RCC_SYSCFG_CONFIG = 0;           // Lock sys_cfg gate control
-    SYSCFG->SYSCFG_LOCK = ~0xa7d93a86;    // Lock from level 1 to 3
-    SYSCFG->SYSCFG_LOCK = ~0xab12dfcd;
-    SYSCFG->SYSCFG_LOCK = ~0xcded3526;
+    SYSCFG->SYSCFG_LOCK = ~0xA8561D89;    // Lock from level 1 to 3
+    SYSCFG->SYSCFG_LOCK = ~0x308684D1;
+    SYSCFG->SYSCFG_LOCK = ~0xD9A25E3A ;
     *(__IO uint32_t *)(FLASH_R_BASE + 0x28C) = ~0xa5a5a5a5;// Lock QSPI
 
     return 1;

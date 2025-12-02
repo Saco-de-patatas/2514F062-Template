@@ -81,7 +81,7 @@ int main(void)
   printf("SYSCLK: %ld, HCLK: %ld, PCLK1: %ld, PCLK2: %ld, ADCCLK: %ld\n",
          clocks.SYSCLK_Frequency, clocks.HCLK_Frequency,
          clocks.PCLK1_Frequency, clocks.PCLK2_Frequency, clocks.ADCCLK_Frequency);
-  printf("AIR32F103 ST7735 LVGL Demo 2.\n");
+  printf("2514F062 ST7735 LVGL Demo 2.\n");
 
   TIM3_Configuration();
   APP_GPIO_Config();

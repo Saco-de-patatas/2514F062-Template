@@ -58,7 +58,7 @@ int main(void)
     USART_Printf_Init(115200);
     printf("SystemClk:%ld\r\n", SystemCoreClock);
 
-    printf("AIR32F103 GPIO EXTI Input Test.\n");
+    printf("2514F062 GPIO EXTI Input Test.\n");
 
     GPIO_Configuration();
 

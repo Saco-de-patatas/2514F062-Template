@@ -69,7 +69,7 @@ int main(void)
   printf("\nSYSCLK: %ld, HCLK: %ld, PCLK1: %ld, PCLK2: %ld, ADCCLK: %ld\n",
   		   clocks.SYSCLK_Frequency, clocks.HCLK_Frequency,
   		   clocks.PCLK1_Frequency, clocks.PCLK2_Frequency, clocks.ADCCLK_Frequency);
-  printf("AIR32F103 DSP Lib Test.\n");
+  printf("2514F062 DSP Lib Test.\n");
 
 #ifndef  USE_STATIC_INIT
 

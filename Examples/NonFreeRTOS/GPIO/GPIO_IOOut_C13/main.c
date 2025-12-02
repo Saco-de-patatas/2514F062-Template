@@ -28,7 +28,7 @@ int main(void)
            (float)clocks.SYSCLK_Frequency / 1000000, (float)clocks.HCLK_Frequency / 1000000,
            (float)clocks.PCLK1_Frequency / 1000000, (float)clocks.PCLK2_Frequency / 1000000, 
 		   (float)clocks.ADCCLK_Frequency / 1000000);
-    printf("AIR32F103 GPIO Output Test\n");
+    printf("2514F062 GPIO Output Test\n");
     GPIO_Configuration();
 
     while (1)

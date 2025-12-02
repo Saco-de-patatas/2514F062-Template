@@ -33,7 +33,7 @@ int main(void)
   printf("SYSCLK: %ld, HCLK: %ld, PCLK1: %ld, PCLK2: %ld, ADCCLK: %ld\n",
          clocks.SYSCLK_Frequency, clocks.HCLK_Frequency,
          clocks.PCLK1_Frequency, clocks.PCLK2_Frequency, clocks.ADCCLK_Frequency);
-  printf("AIR32F103 E-Paper Demo.\n");
+  printf("2514F062 E-Paper Demo.\n");
 
   APP_GPIO_Config();
   APP_SPI_Config();
