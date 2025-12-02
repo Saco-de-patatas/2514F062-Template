@@ -33,7 +33,15 @@
 
 ## Documents
 
+### For AIR32f103:
+
 [WIKI](https://wiki.luatos.com/chips/air32f103/index.html) | [Datasheet](https://cdn.openluat-luatcommunity.openluat.com/attachment/20220605164850945_AIR32F103%E8%8A%AF%E7%89%87%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C1.0.0.pdf) | [Migrate From STM32](https://wiki.luatos.com/chips/air32f103/switchFromSxx.html) | [Keil SDK And Demos](https://gitee.com/openLuat/luatos-soc-air32f103)
+
+### For HL2103A[C]/MH2103A[C]:
+
+### For W55MH32:
+
+[Website](https://wiznet.io/products/mcu-chips/w55mh32) | [Website 2](https://www.w5500.com/w55mh32.html) | [Specs](https://www.w5500.com/downloads/w55mh32/W55MH32_Specification_V1.0.1.pdf) | [GitHub library](https://github.com/Wiznet/W55MH32-Reference-code) | [Datasheet](https://docs.wiznet.io/assets/files/W55MH32_Datasheet_V1.0.0_EN-96b239345bf564bc90ec27da175faa95.pdf) | [User Manual](https://docs.wiznet.io/assets/files/W55MH32_User_Manual_V1.0.0_EN-752dd0766ae34d786495c2419291d5f8.pdf) | [Reference Manual (incomplete)](https://www.w5500.com/downloads/w55mh32/W55MH32_Reference%20Manual_V1.0.0.pdf) | [SDK](https://www.w5500.com/downloads/w55mh32/W55MH32%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6V1.2.zip)
 
 ## LuatOS AIR32F103CBT6 EVB - Modified for working with this 2514F062
 
