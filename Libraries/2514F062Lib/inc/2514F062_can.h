@@ -314,11 +314,11 @@ typedef struct
 /** @defgroup CAN_filter_number 
   * @{
   */
-#ifndef 2514F062_CL
+#ifndef _2514F062_CL
   #define IS_CAN_FILTER_NUMBER(NUMBER) ((NUMBER) <= 13)
 #else
   #define IS_CAN_FILTER_NUMBER(NUMBER) ((NUMBER) <= 27)
-#endif /* 2514F062_CL */ 
+#endif /* _2514F062_CL */ 
 /**
   * @}
   */

@@ -254,7 +254,7 @@ static void SetSysClockToHSE(void)
             PLL_M = ((PLL_M-17) | 1<<10 )<<18;                                  /* High speed PLL setting*/
 
         //AIR_SysFreq_Set(PLL_M, flash_div, 0, 1);                                /* Internal ROM hack to enable fast PLL */
-		2514_SysFreq_Set(0, PLL_M, flash_div); 
+		_2514_SysFreq_Set(0, PLL_M, flash_div); 
      
         RCC->CFGR &= (uint32_t)((uint32_t)~(RCC_CFGR_PLLSRC | RCC_CFGR_PLLXTPRE |
                                                 RCC_CFGR_PLLMULL));             /* PLL configuration */

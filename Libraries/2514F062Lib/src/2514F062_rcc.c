@@ -1100,7 +1100,7 @@ uint32_t 2514_RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t RCC_PLLMul, FlashCl
     SYSCFG->SYSCFG_LOCK = 0xD9A25E3A;
     *(__IO uint32_t *)(FLASH_R_BASE + 0x28C) = 0xa5a5a5a5; // Unlock QSPI
 
-    2514_SysFreq_Set(RCC_PLLMul, Latency, 0, 1);
+    _2514_SysFreq_Set(RCC_PLLMul, Latency, 0, 1);
     RCC->CFGR = (RCC->CFGR & ~0x00030000) | RCC_PLLSource;
 
     // Restore previous config
