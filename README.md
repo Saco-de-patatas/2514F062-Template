@@ -31,6 +31,9 @@
     * The HL2103A[C] (Plenty of documentation in english)  Visit [HLKP](https://www.hlkpint.com/product6_1.php?lm=59) for more information, datasheets, STM32 migration...
     * The networking SoC called W55MH32, with a great amount of documentation, an excellent SDK, and many tutorials out there in internet.
 
+## Pictures for identificating the chip...
+![The J-LinkOB with this MH2103 variant](Pics/20251202_140942.jpg)
+
 ## Documents
 
 ### For AIR32f103:
