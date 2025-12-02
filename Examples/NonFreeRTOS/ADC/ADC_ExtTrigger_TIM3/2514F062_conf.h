@@ -7,7 +7,7 @@
 *  Otherwise, will calculate the PLL multiplier (SYSCLK / HSE_VAL).
 *  If the multiplier is 1, then the PLL won't be used.
 */
-#define SYSCLK_HSE      HSE(216)
+#define SYSCLK_HSE      HSE(128)
 
 /* Includes ------------------------------------------------------------------*/
 /* Uncomment/Comment the line below to enable/disable peripheral header file inclusion */
