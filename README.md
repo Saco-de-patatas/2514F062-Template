@@ -1,10 +1,11 @@
 # About
 
-* AIR32F103x / MH32F103Ax / MH2103Ax template project for GNU Arm Embedded Toolchain
+* 2514F062 / El CheapoPill template project for GNU Arm Embedded Toolchain
+* This OEM chip found within extremelly cheap Bluepills and J-LinkOB is also a Megahunt variant of MH2103 with different unlock keys.
 * Supported programmers: J-Link, STLink, DAPLink/PyOCD
 * Supported IDE: VSCode
 
-# AIR32F103x / MH32F103Ax / MH2103Ax Family
+# AIR32F103x / MH32F103Ax / MH2103Ax Family - Mentioned for comparison, actually not the same as 2514F062.
 
 | TYPE  | AIR32F103CBT6<br>MH32F103ACBT6<br>MH2103ACBT6 | AIR32F103CCT6<br>MH32F103ACCT6<br>MH2103ACCT6 | AIR32F103RPT6<br>MH32F103ARPT6<br>MH2103ARPT6 |
 | ----- | ------------- | ------------- | ------------- |
@@ -14,19 +15,27 @@
 
 ## Note
 
-* AIR32F103, MH32F103A and MH2103A series
-  * Supplied by different vendors, but they are the same from the software aspect of view.
-  * The electrical characteristics might be different, be careful when replacing them in production.
-* Unlock the hidden 97K RAM
-  * It's very likely the AIR32F103CBT6 you bought have 97K RAM - [Hedley Rainnie's blog](http://www.hrrzi.com/2022/12/the-air32f103.html)
-  * This also apply to AIR32F103CCT6 and AIR32F103RPT6.
-  * The hidden RAM can be unlocked by special registers, the hack has been integrated into startup_air32f10x.s. Thanks to @deividAlfa.
+* OEM marked 2514F062 (Found in cheap J-LinkOBs from Aliexpress)/ Some marked STM32f103C8T6 chips within cheap bluepills... (the real part for these isn't known yet).
+  * Very similar to the MH2103Ax (and their aliases). Some differences are present, but all the magic peripherals are there, TRNG and DACs have been tested.
+  * PLL over x16 has been changed/undocumented. Still more research (or the disclosure of a private document) is needed.
+  * Using PLL x16 and a 16MHz crystal in a cheap bluepill, running at 256MHz is stable (one week of continuous testing at this speed).
+  * Megahunt MCUs use to run at 216MHz standard speed.
+  * This variant is almost the same from the software aspect of view, minor changes have been implemented to the parent template.
+  * The electrical characteristics might be different, be careful when replacing them in production, but as we currently don't know the internal code for the silicon die, this is not a big deal.
+* Unlock the hidden 64K+1K RAM
+  * It's very likely the gadget you bought (J-LinkOB or El CheapoPill) has 64K+1K RAM - Here is the original hack [Hedley Rainnie's blog](http://www.hrrzi.com/2022/12/the-air32f103.html), it differs from the MH32F103A hack in that the RAM area located at 0x20010000 to 0x20017FFF is turned off (either not existent or disabled).
+  * This might also apply to other chips as this looks that Megahunt manufactures the silicon die and other OEM fit it within the final package.
+  * The hidden RAM can be unlocked by the same special registers of the MH2103A, however the keys are different. The hack has been integrated into startup_air32f10x.s. Thanks to @deividAlfa for the original integration.
+ * Other variants:
+  * There is at least another 2 variants sharing the same core as the MH2103x
+    * The HL2103A[C] (Plenty of documentation in english)  Visit [HLKP](hlkpint.com) for more information, datasheets, STM32 migration...
+    * The networking SoC called W55MH32, with a great amount of documentation, an excellent SDK, and many tutorials out there in internet.
 
 ## Documents
 
 [WIKI](https://wiki.luatos.com/chips/air32f103/index.html) | [Datasheet](https://cdn.openluat-luatcommunity.openluat.com/attachment/20220605164850945_AIR32F103%E8%8A%AF%E7%89%87%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C1.0.0.pdf) | [Migrate From STM32](https://wiki.luatos.com/chips/air32f103/switchFromSxx.html) | [Keil SDK And Demos](https://gitee.com/openLuat/luatos-soc-air32f103)
 
-## LuatOS AIR32F103CBT6 EVB
+## LuatOS AIR32F103CBT6 EVB - Modified for working with this 2514F062
 
 [EVB Schematis](https://cdn.openluat-luatcommunity.openluat.com/attachment/20220605164915340_AIR32CBT6.pdf) | [PCB](https://wiki.luatos.com/_static/bom/Air32F103.html)
 
@@ -38,7 +47,7 @@
 │   ├── FreeRTOS                  # FreeRTOS examples
 │   └── NonFreeRTOS               # Non-FreeRTOS examples
 ├── Libraries                   
-│   ├── AIR32F10xLib            # AIR32F103 Peripheral library
+│   ├── 2514F062Lib            # 2514F062 Peripheral library
 │   │   ├── inc                 
 │   │   ├── lib
 │   │   └── src  
@@ -129,7 +138,7 @@ PYOCD_DEVICE	?= air32f103cb
 ##### Paths ############
 
 # Link script for current chip
-LDSCRIPT		= Libraries/LDScripts/air32f103cbt6.ld
+LDSCRIPT		= Libraries/LDScripts/2514F062cbt6.ld
 ```
 
 ## 5. Compile and Flash
