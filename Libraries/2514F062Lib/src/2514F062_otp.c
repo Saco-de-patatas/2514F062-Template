@@ -9,7 +9,7 @@
 void OTP_PowerOn(uint32_t Time)
 {
 	RCC->RCC_SYSCFG_CONFIG = 0x01;
-	SYSCFG->SYSCFG_LOCK = 0xAB12DFCD;
+	SYSCFG->SYSCFG_LOCK = 0x308684D1;
 	if(Time > OTP_POWERON_TIME)
 	{
 		OTP->OTP_LDO =Time;
@@ -22,7 +22,7 @@ void OTP_PowerOn(uint32_t Time)
 
 void OTP_PowerOff(void)
 {
-	SYSCFG->SYSCFG_LOCK = 0xAB12DFCD;
+	SYSCFG->SYSCFG_LOCK = ~0x308684D1;
 	RCC->RCC_SYSCFG_CONFIG = 0x00;
 }
 

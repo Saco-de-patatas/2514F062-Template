@@ -937,18 +937,18 @@ typedef struct
   */
 typedef struct
 {
-	__IO uint32_t OTP_DATA0;
-	__IO uint32_t OTP_DATA1;
-	__IO uint32_t OTP_DATA2;
-	__IO uint32_t OTP_DATA3;
-	__IO uint32_t OTP_DATA4;
-	__IO uint32_t OTP_DATA5;
-	__IO uint32_t OTP_DATA6;
-	__IO uint32_t OTP_DATA7;	
-	__IO uint32_t OTP_CTRL;
-	__IO uint32_t OTP_WR;
-	__IO uint32_t OTP_10ns;
-	__IO uint32_t OTP_LDO;
+	__IO uint32_t OTP_DATA0; //6C50
+	__IO uint32_t OTP_DATA1; //6C54
+	__IO uint32_t OTP_DATA2; //6C58
+	__IO uint32_t OTP_DATA3; //6C5C
+	__IO uint32_t OTP_DATA4; //6C60
+	__IO uint32_t OTP_DATA5; //6C64
+	__IO uint32_t OTP_DATA6; //6C68
+	__IO uint32_t OTP_DATA7; //6C6C	
+	__IO uint32_t OTP_CTRL;  //6C70
+	__IO uint32_t OTP_WR;	 //6C74
+	__IO uint32_t OTP_10ns;	 //6C78
+	__IO uint32_t OTP_LDO;	 //6C7C
 }OTP_TypeDef;
 /*****************************************************/
 
