@@ -69,6 +69,7 @@ AFILES	:= Libraries/DeviceSupport/startup/arm-gcc/startup_2514F062.s
 INCLUDES	:= User \
 			Libraries/CMSIS/Core/Include \
 			Libraries/2514F062Lib/inc \
+			Libraries/2514F062Lib/lib/mh_crypt \
 			Libraries/Debug \
 
 ##### Optional Libraries ############
