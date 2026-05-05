@@ -160,7 +160,7 @@ void SystemCoreClockUpdate (void)
       pllmull = (RCC->CFGR & RCC_CFGR_PLLMULL) >> 18;
       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
 
-      if (RCC->CFGR & 1<<28)                               /* High speed PLL bit */
+      if (RCC->CFGR & 1<<27)                               /* High speed PLL bit */
           pllmull += 17;
       else
           pllmull += 2;                                    /* Normal PLL */
@@ -251,7 +251,7 @@ static void SetSysClockToHSE(void)
         if(PLL_M<17)
             PLL_M = (PLL_M-2)<<18;                                              /* Low speed PLL setting*/
         else
-            PLL_M = ((PLL_M-17) | 1<<10 )<<18;                                  /* High speed PLL setting*/
+            PLL_M = ((PLL_M-17) | 1<<9 )<<18;                                  /* High speed PLL setting*/
 
         //AIR_SysFreq_Set(PLL_M, flash_div, 0, 1);                                /* Internal ROM hack to enable fast PLL */
 		_2514_SysFreq_Set(0, PLL_M, flash_div); 

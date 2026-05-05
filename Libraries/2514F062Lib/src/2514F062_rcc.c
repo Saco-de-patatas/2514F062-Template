@@ -625,7 +625,7 @@ void RCC_GetClocksFreq(RCC_ClocksTypeDef* RCC_Clocks)
       pllmull = RCC->CFGR & CFGR_PLLMull_Mask;
       pllsource = RCC->CFGR & CFGR_PLLSRC_Mask;
 
-      if (RCC->CFGR >> 28 & 0x01)
+      if (RCC->CFGR >> 27 & 0x01)
       {
         pllmull = (0x01 << 4 | (pllmull >> 18)) + 1;
       }
