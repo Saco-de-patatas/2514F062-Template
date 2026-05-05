@@ -17,7 +17,8 @@
 
 * OEM marked 2514F062 (Found in cheap J-LinkOBs from Aliexpress)/ Some marked STM32f103C8T6 chips within cheap bluepills... (the real part for these isn't known yet).
   * Very similar to the MH2103Ax (and their aliases). Some differences are present, but all the magic peripherals are there, TRNG and DACs have been tested.
-  * PLL over x16 has been changed/undocumented. Still more research (or the disclosure of a private document) is needed.
+  * PLL over x16 has been changed/undocumented.~~Still more research (or the disclosure of a private document) is needed.~~
+	*UPDATE: The previous tests for searching the High Speed bit were not right. The right bit has been found (bit from RCC->CFGR changed from 28 to 27). Now the "El CheapoPill" runs at 256MHz with no need of swapping the Xtal.
   * Using PLL x16 and a 16MHz crystal in a cheap bluepill, running at 256MHz is stable (one week of continuous testing at this speed).
   * Megahunt MCUs use to run at 216MHz standard speed.
   * This variant is almost the same from the software aspect of view, minor changes have been implemented to the parent template.
@@ -44,6 +45,12 @@ Running the TRNG demo in a "El cheapoPill" (using standard xtal and x16 PLL mult
 
 Running the TRNG demo in a "El CheapoPill", crystal replaced with one of 16MHz. Used for testing the stability of the silicon at this speed.
 ![TRNG at 256MHz](Pics/SPEED_AND_TRNG_TEST.PNG)
+
+## NEWS++ (05/05/2026)
+
+André, from https://www.blaatschaap.be/ has found the right bit that enables high speed (PLL over 16). The RCC clock test has been updated and now the "El cheapoPill" can run at 256MHz with the stock crystal.
+
+![RCC clock speed test](Pics/The256MHz.PNG)
 
 
 
