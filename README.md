@@ -66,7 +66,7 @@ André, from https://www.blaatschaap.be/ has found the right bit that enables hi
 
 ### For W55MH32:
 
-[Website](https://wiznet.io/products/mcu-chips/w55mh32) | [Website 2](https://www.w5500.com/w55mh32.html) | [Specs](https://www.w5500.com/downloads/w55mh32/W55MH32_Specification_V1.0.1.pdf) | [GitHub library](https://github.com/Wiznet/W55MH32-Reference-code) | [Datasheet](https://docs.wiznet.io/assets/files/W55MH32_Datasheet_V1.0.0_EN-96b239345bf564bc90ec27da175faa95.pdf) | [User Manual](https://docs.wiznet.io/assets/files/W55MH32_User_Manual_V1.0.0_EN-752dd0766ae34d786495c2419291d5f8.pdf) | [Reference Manual (incomplete)](https://www.w5500.com/downloads/w55mh32/W55MH32_Reference%20Manual_V1.0.0.pdf) | [SDK](https://www.w5500.com/downloads/w55mh32/W55MH32%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6V1.2.zip)
+[Website](https://wiznet.io/products/mcu-chips/w55mh32) | [Website 2](https://www.w5500.com/chip/W55MH32) | [Specs](https://www.w5500.com/w5500/media/upload/specification/W55MH32_Specification_V1.0.1.pdf) | [GitHub library](https://github.com/Wiznet/W55MH32-Reference-code) | [Datasheet](https://www.w5500.com/w5500/media/upload/datasheet/W55MH32_Datasheet_V1.0.1.pdf) | [User Manual](https://www.w5500.com/w5500/media/upload/user_manual/W55MH32_User_Manual_V1.0.1.pdf) | [Reference Manual (V1.0.1 - English)](https://www.w5500.com/w5500/media/upload/reference_manual/W55MH32_Reference_Manual_V1.0.1.pdf) | [SDK](https://www.w5500.com/w5500/media/upload/sdk/W55MH32%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6V1.3.7z)
 
 ## LuatOS AIR32F103CBT6 EVB - Modified for working with this 2514F062
 
