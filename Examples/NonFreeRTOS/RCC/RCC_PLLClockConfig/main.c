@@ -26,7 +26,7 @@ void RCC_ClkConfiguration(uint32_t RCC_PLLMul)
     while (RCC_GetFlagStatus(RCC_FLAG_HSERDY) == RESET);
 
     RCC_PLLCmd(DISABLE);
-    AIR_RCC_PLLConfig(RCC_PLLSource_HSE_Div1, RCC_PLLMul, 1);
+    _2514_RCC_PLLConfig(RCC_PLLSource_HSE_Div1, RCC_PLLMul, 1);
     RCC_PLLCmd(ENABLE);
     while (RCC_GetFlagStatus(RCC_FLAG_PLLRDY) == RESET);
 
@@ -46,11 +46,11 @@ int main(void)
     GPIO_Configuration();
 
     USART_Printf_Init(115200);
-    printf("\nSYSCLK: %3.1fMhz, HCLK: %3.1fMhz, PCLK1: %3.1fMhz, PCLK2: %3.1fMhz, ADCCLK: %3.1fMhz\n",
+    printf("\n\nEl Cheapopill running with the stock 8Mhz crystal.\nSYSCLK: %3.1fMhz, HCLK: %3.1fMhz, PCLK1: %3.1fMhz, PCLK2: %3.1fMhz, ADCCLK: %3.1fMhz\n",
            (float)clocks.SYSCLK_Frequency / 1000000, (float)clocks.HCLK_Frequency / 1000000,
            (float)clocks.PCLK1_Frequency / 1000000, (float)clocks.PCLK2_Frequency / 1000000, 
 		   (float)clocks.ADCCLK_Frequency / 1000000);
-    printf("2514F062 Clock Config Test\n");
+    printf("Clock Config Test\n");
     Delay_Ms(1000);
     printf("SystemClk:%ld\r\n", SystemCoreClock);
     Delay_Ms(1000);
